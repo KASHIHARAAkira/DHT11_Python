@@ -90,6 +90,7 @@ class DHT11:
                 if unchanged_count > max_unchanged_count:
                     break
 
+        time.sleep(0.000001)
         return data
 
     def __parse_data_pull_up_lengths(self, data):
